@@ -520,9 +520,14 @@ export const OfferSec = styled.div`
       }
     }
     .body {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
 
       margin: 0 auto;
+      gap: 2rem;
+
+      .card {
+        width: 100%;
+      }
     }
   }
 `;
