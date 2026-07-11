@@ -78,6 +78,8 @@ export const HeaderSec = styled.div`
     .nav {
       ul {
         display: flex;
+        align-items: center;
+        justify-content: center;
         list-style: none;
         gap: 1.5rem;
         li {
@@ -86,12 +88,14 @@ export const HeaderSec = styled.div`
             text-decoration: none;
             border-radius: 16px;
             padding: 6px 16px;
+            &:hover,
+            &.active {
+              background-color: #dbdfd0;
+            }
           }
         }
-        li:first-child {
-          a {
-            background-color: #dbdfd0;
-          }
+        button {
+          display: none;
         }
       }
     }
@@ -100,7 +104,7 @@ export const HeaderSec = styled.div`
       border: 1px solid #333;
       padding: 6px 16px;
     }
-    .hamburger {
+    .hamburgerOpen {
       display: none;
     }
   }
@@ -143,13 +147,44 @@ export const HeaderSec = styled.div`
         }
       }
       .nav {
-        display: none;
+        ul {
+          z-index: 2;
+          position: fixed;
+          flex-direction: column;
+          top: 0;
+          left: 0;
+          height: 70vh;
+          width: 100%;
+          backdrop-filter: blur(10px);
+          transition: 1s;
+          transform: translateY(-100vh);
+          li {
+            font-weight: 600;
+          }
+          button {
+            display: block;
+            top: 2rem;
+            right: 1rem;
+            position: absolute;
+            border: none;
+            background: transparent;
+            font-size: 20px;
+            color: #333;
+            padding: 0;
+          }
+        }
+        .responsive_nav {
+          transform: none;
+        }
       }
       button {
         display: none;
       }
-      .hamburger {
+      .hamburgerOpen {
         display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
 
         span {
           font-size: 20px;
@@ -166,7 +201,7 @@ export const HeroSec = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   background:
-    linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)),
+    linear-gradient(rgba(80, 80, 80, 0.01), rgba(80, 80, 80, 0.08)),
     url(${heroimg});
 
   background-size: cover;
@@ -213,6 +248,9 @@ export const HeroSec = styled.div`
     }
   }
   @media (min-width: 260px) and (max-width: 500px) {
+    background:
+      linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)),
+      url(${heroimg});
     .container {
       padding: 8rem 2rem;
 
@@ -226,6 +264,9 @@ export const HeroSec = styled.div`
         button {
           padding: 15px 24px;
           font-size: 12px;
+        }
+        button:nth-child(2) {
+          border: 0.5px solid #333;
         }
       }
     }
@@ -841,7 +882,7 @@ export const BlogSec = styled.div`
 export const FooterSec = styled.footer`
   max-width: 1200px;
 
-  margin: 3rem auto;
+  margin: 3rem auto 0;
   padding: 9rem 0;
   background-color: #474747;
   .main {

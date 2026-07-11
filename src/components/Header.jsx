@@ -1,11 +1,20 @@
+import { NavLink } from "react-router-dom";
+
 import { MdOutlinePhone, MdMailOutline } from "react-icons/md";
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 import { HeaderSec } from "./style";
 import logo from "../Images/logo-img.png";
 import { CgMenuLeftAlt } from "react-icons/cg";
 import { MdClose } from "react-icons/md";
+import { useRef } from "react";
 
 const Header = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
     <HeaderSec>
       <div className="Uppernav">
@@ -52,38 +61,64 @@ const Header = () => {
           <h1>Dune Bliss</h1>
         </div>
         <div className="nav">
-          <ul>
+          <ul ref={navRef}>
             <li>
               {" "}
-              <a href="">Home</a>
+              <NavLink
+                to="/LandingPage"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                About
+              </NavLink>
             </li>
             <li>
               {" "}
-              <a href="">About</a>
+              <NavLink
+                to="/menu"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Menu
+              </NavLink>
             </li>
             <li>
               {" "}
-              <a href="">Menu</a>
+              <NavLink
+                to="/pages"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Pages
+              </NavLink>
             </li>
             <li>
               {" "}
-              <a href="">Pages</a>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Contact
+              </NavLink>
             </li>
-            <li>
-              {" "}
-              <a href="">Contact</a>
-            </li>
+            <button className="hamburgerClose" onClick={showNavbar}>
+              <span>
+                <MdClose />
+              </span>
+            </button>
           </ul>
         </div>
         <button>Book A Table</button>
-        <div className="hamburger">
+        <button className="hamburgerOpen" onClick={showNavbar}>
           <span>
             <CgMenuLeftAlt />
           </span>
-          <span>
-            <MdClose />
-          </span>
-        </div>
+        </button>
       </div>
     </HeaderSec>
   );
