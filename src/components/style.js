@@ -153,7 +153,7 @@ export const HeaderSec = styled.div`
           flex-direction: column;
           top: 0;
           left: 0;
-          height: 70vh;
+          height: 50vh;
           width: 100%;
           backdrop-filter: blur(10px);
           transition: 1s;
@@ -252,7 +252,8 @@ export const HeroSec = styled.div`
       linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)),
       url(${heroimg});
     .container {
-      padding: 8rem 2rem;
+      padding: 5rem 2rem;
+      gap: 1rem;
 
       h1 {
         font-size: 3.4rem;
@@ -333,6 +334,8 @@ export const BrowseSec = styled.div`
     .body {
       padding: 0 2rem;
       grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
       .card {
         .card-icon {
           span {
@@ -430,7 +433,7 @@ export const VisitSec = styled.div`
       gap: 5rem;
       .left {
         img {
-          width: 300px;
+          width: 280px;
         }
         .leftfloat {
           width: 200px;
@@ -729,6 +732,7 @@ export const BlogSec = styled.div`
     margin: 0 auto;
     .title {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       margin-bottom: 2rem;
       h1 {
@@ -825,7 +829,7 @@ export const BlogSec = styled.div`
           max-width: 35%;
         }
         button {
-          padding: 2px 12px;
+          padding: 6px 12px;
           font-size: 11px;
         }
       }
