@@ -1,8 +1,8 @@
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 import img1 from "../Images/Foot1.png";
 import img2 from "../Images/foot2.png";
-import img3 from "../Images/Foot3.png";
-import img4 from "../Images/Foot4.png";
+import img3 from "../Images/foot3.png";
+import img4 from "../Images/foot4.png";
 import logoImg from "../Images/Footer-logo.png";
 import { FooterSec } from "./style";
 
