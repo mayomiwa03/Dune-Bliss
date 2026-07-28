@@ -104,8 +104,14 @@ const Header = () => {
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Contact
+              </NavLink>{" "}
+            </li>
+            <li>
+              <NavLink to="/book" className="book-nav">
+                Book a Table
               </NavLink>
             </li>
+
             <button className="hamburgerClose" onClick={showNavbar}>
               <span>
                 <MdClose />

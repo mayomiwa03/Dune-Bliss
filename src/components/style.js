@@ -98,6 +98,9 @@ export const HeaderSec = styled.div`
             }
           }
         }
+        .book-nav {
+          display: none;
+        }
         button {
           display: none;
         }
@@ -169,6 +172,9 @@ export const HeaderSec = styled.div`
             a {
               border: none;
             }
+          }
+          .book-nav {
+            display: block;
           }
           button {
             display: block;
@@ -1221,6 +1227,8 @@ export const PartnersSec = styled.div`
 
       .left {
         text-align: center;
+        width: 90%;
+
         p {
           width: 100%;
         }
@@ -1322,7 +1330,7 @@ export const ProductSec = styled.div`
       }
       .main {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1rem;
         padding: 2rem;
 
         div {
