@@ -1481,7 +1481,7 @@ export const BookingSec = styled.div`
   }
   @media (min-width: 260px) and (max-width: 500px) {
     .form-cont {
-      top: 15rem;
+      top: 25rem;
 
       .title {
         margin-bottom: 0.3rem;
