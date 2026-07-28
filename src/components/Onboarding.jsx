@@ -48,12 +48,13 @@ const Illustration = styled.img`
 
 const Title = styled.h1`
   color: #ad343e;
-  font-size: 35px;
+  font-size: 24px;
 `;
 
 const Text = styled.p`
   color: #333;
   max-width: 300px;
+  font-size: 10px;
 `;
 
 const Button = styled.button`
@@ -65,12 +66,13 @@ const Button = styled.button`
   background: #ad343e;
   color: white;
   font-weight: bold;
+  font-size: 12px;
   cursor: pointer;
 `;
 
 const Dots = styled.div`
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 15px;
   color: #999;
 `;
 
