@@ -113,7 +113,9 @@ const Header = () => {
             </button>
           </ul>
         </div>
-        <button>Book A Table</button>
+        <NavLink className="book" to="/book">
+          Book A Table
+        </NavLink>
         <button className="hamburgerOpen" onClick={showNavbar}>
           <span>
             <CgMenuLeftAlt />

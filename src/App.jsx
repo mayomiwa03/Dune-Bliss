@@ -6,6 +6,7 @@ import About from "./components/About";
 import Menu from "./components/Menu";
 import Pages from "./components/Pages";
 import Contact from "./components/Contact";
+import Book from "./components/Book";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/pages" element={<Pages />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/book" element={<Book />} />
       </Routes>
     </BrowserRouter>
   );

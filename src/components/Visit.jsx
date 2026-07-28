@@ -1,14 +1,14 @@
 import { VisitSec } from "./style";
-import visitimg from "../Images/Come-img.png";
+
 import { MdOutlinePhone, MdMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 
-const Visit = () => {
+const Visit = ({ image }) => {
   return (
     <VisitSec>
       <div className="container">
         <div className="left">
-          <img src={visitimg} alt="shawarma" />
+          <img src={image} alt="shawarma" />
           <div className="leftfloat">
             <h2>Come and visit us</h2>
             <div className="flx">
