@@ -128,95 +128,100 @@ export const HeaderSec = styled.div`
   }
 
   @media (min-width: 260px) and (max-width: 500px) {
-    .containerrr {
-      padding: 0.5rem 1rem;
+    .Uppernav {
+      .containerrr {
+        padding: 0.5rem 1rem;
 
-      .contact {
-        align-items: start;
+        .contact {
+          align-items: start;
 
-        flex-direction: column;
-        gap: 0.2rem;
+          flex-direction: column;
+          gap: 0.2rem;
 
-        a:link {
-          font-size: 9px;
-          span {
-            font-size: 10px;
+          a:link {
+            font-size: 9px;
+            span {
+              font-size: 10px;
+            }
           }
         }
-      }
-      .socials {
-        gap: 0.3rem;
-        span {
-          a {
-            font-size: 10px;
-            padding: 6px 9px;
+        .socials {
+          gap: 0.3rem;
+          span {
+            a {
+              font-size: 10px;
+              padding: 6px 9px;
+            }
           }
         }
       }
     }
+
     .lowerNav {
-      padding: 1rem 1rem;
-      .logo {
-        gap: 0.5rem;
-        img {
-          width: 25px;
+      .containerrr {
+        padding: 1rem 1rem;
+        .logo {
+          gap: 0.5rem;
+          img {
+            width: 25px;
+          }
+          h1 {
+            font-size: 1.2rem;
+          }
         }
-        h1 {
-          font-size: 1.2rem;
-        }
-      }
-      .nav {
-        ul {
-          z-index: 2;
-          position: fixed;
-          flex-direction: column;
-          top: 0;
-          left: 0;
-          height: 50vh;
-          width: 100%;
-          backdrop-filter: blur(10px);
-          transition: 1s;
-          transform: translateY(-100vh);
-          li {
-            font-weight: 600;
-            a {
+        .nav {
+          ul {
+            z-index: 2;
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            height: 50vh;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            transition: 1s;
+            transform: translateY(-100vh);
+            li {
+              font-weight: 600;
+              a {
+                border: none;
+              }
+            }
+            .book-nav {
+              display: block;
+            }
+            button {
+              display: block;
+              top: 2rem;
+              right: 1rem;
+              position: absolute;
               border: none;
+              background: transparent;
+              font-size: 20px;
+              color: #333;
+              padding: 0;
             }
           }
-          .book-nav {
-            display: block;
+          .responsive_nav {
+            transform: none;
           }
-          button {
-            display: block;
-            top: 2rem;
-            right: 1rem;
-            position: absolute;
-            border: none;
-            background: transparent;
+        }
+        .book {
+          display: none;
+        }
+        .hamburgerOpen {
+          display: block;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+
+          span {
             font-size: 20px;
             color: #333;
-            padding: 0;
           }
-        }
-        .responsive_nav {
-          transform: none;
-        }
-      }
-      .book {
-        display: none;
-      }
-      .hamburgerOpen {
-        display: block;
-        border: none;
-        background-color: transparent;
-        padding: 0;
-
-        span {
-          font-size: 20px;
-          color: #333;
-        }
-        span:nth-child(2) {
-          display: none;
+          span:nth-child(2) {
+            display: none;
+          }
         }
       }
     }
@@ -276,6 +281,7 @@ export const HeroSec = styled.div`
     background:
       linear-gradient(rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5)),
       url(${heroimg});
+    height: 70vh;
     .container {
       padding: 5rem 2rem;
       gap: 1rem;
@@ -1196,6 +1202,40 @@ export const FeelSec = styled.div`
           font-size: 16px;
         }
         p {
+        }
+      }
+    }
+  }
+  @media (min-width: 260px) and (max-width: 500px) {
+    .vid-cont {
+      height: 40vh;
+
+      .cont {
+        .icon {
+          width: 35px;
+          height: 35px;
+        }
+        h1 {
+          font-size: 16px;
+          width: 80%;
+          text-align: center;
+        }
+      }
+    }
+    .flxboxes {
+      flex-direction: column;
+      padding: 1rem 2rem;
+      .flxbox {
+        .icon {
+          font-size: 20px;
+        }
+        .textcont {
+          h4 {
+            font-size: 11px;
+          }
+          p {
+            font-size: 9px;
+          }
         }
       }
     }
