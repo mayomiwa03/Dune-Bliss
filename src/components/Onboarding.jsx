@@ -42,19 +42,19 @@ const Welcome = styled.div`
 `;
 
 const Illustration = styled.img`
-  width: 250px;
+  width: 350px;
   margin-bottom: 80px;
 `;
 
 const Title = styled.h1`
   color: #ad343e;
-  font-size: 24px;
+  font-size: 32px;
 `;
 
 const Text = styled.p`
   color: #333;
   max-width: 300px;
-  font-size: 10px;
+  font-size: 15px;
 `;
 
 const Button = styled.button`
@@ -66,7 +66,7 @@ const Button = styled.button`
   background: #ad343e;
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
   cursor: pointer;
 `;
 

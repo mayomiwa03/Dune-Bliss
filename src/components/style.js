@@ -18,107 +18,117 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 
 export const HeaderSec = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
   .Uppernav {
     background-color: #ad343e;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 7rem;
-    .contact {
+
+    .containerrr {
+      max-width: 1200px;
       display: flex;
       align-items: center;
-      gap: 2rem;
+      justify-content: space-between;
+      padding: 0.5rem 7rem;
+      margin: 0 auto;
 
-      a:link {
-        color: #fff;
-        text-decoration: none;
-        font-size: 12px;
-        span {
-          font-size: 14px;
-          padding-right: 0.5rem;
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        a:link {
+          color: #fff;
+          text-decoration: none;
+          font-size: 12px;
+          span {
+            font-size: 14px;
+            padding-right: 0.5rem;
+          }
         }
       }
-    }
-    .socials {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      span {
-        a {
-          font-size: 14px;
-          background-color: #aaaaaa40;
-          padding: 8px 12px;
-          border-radius: 100%;
-          color: #fff;
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        span {
+          a {
+            font-size: 14px;
+            background-color: #aaaaaa40;
+            padding: 8px 12px;
+            border-radius: 100%;
+            color: #fff;
+          }
         }
       }
     }
   }
   .lowerNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #333;
-    padding: 1rem 7rem;
     background: transparent;
-
-    .logo {
+    .containerrr {
+      max-width: 1200px;
       display: flex;
       align-items: center;
-      gap: 1rem;
-      img {
-        width: 30px;
-      }
-      h1 {
-        font-family: "Playfair Display", serif;
-        font-size: 1.6rem;
-        padding-top: 10px;
-        font-weight: 700;
-      }
-    }
-    .nav {
-      ul {
+      justify-content: space-between;
+      color: #333;
+      padding: 1rem 7rem;
+      margin: 0 auto;
+
+      .logo {
         display: flex;
         align-items: center;
-        justify-content: center;
-        list-style: none;
-        gap: 1.5rem;
-        li {
-          a {
-            color: #333;
-            text-decoration: none;
-            border-radius: 16px;
-            padding: 6px 16px;
-            &:hover,
-            &.active {
-              background-color: #ad343e;
-              color: #fff;
-            }
-          }
+        gap: 1rem;
+        img {
+          width: 30px;
         }
-        .book-nav {
-          display: none;
-        }
-        button {
-          display: none;
+        h1 {
+          font-family: "Playfair Display", serif;
+          font-size: 1.6rem;
+          padding-top: 10px;
+          font-weight: 700;
         }
       }
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-      border-radius: 16px;
-      border: 1px solid #333;
-      padding: 6px 16px;
-    }
-    .hamburgerOpen {
-      display: none;
+      .nav {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+          gap: 1.5rem;
+          li {
+            a {
+              color: #333;
+              text-decoration: none;
+              border-radius: 16px;
+              padding: 6px 16px;
+              &:hover,
+              &.active {
+                background-color: #ad343e;
+                color: #fff;
+              }
+            }
+          }
+          .book-nav {
+            display: none;
+          }
+          button {
+            display: none;
+          }
+        }
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+        border-radius: 16px;
+        border: 1px solid #333;
+        padding: 6px 16px;
+      }
+      .hamburgerOpen {
+        display: none;
+      }
     }
   }
+
   @media (min-width: 260px) and (max-width: 500px) {
-    .Uppernav {
+    .containerrr {
       padding: 0.5rem 1rem;
 
       .contact {
@@ -213,7 +223,7 @@ export const HeaderSec = styled.div`
   }
 `;
 export const HeroSec = styled.div`
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   background:
     linear-gradient(rgba(80, 80, 80, 0.01), rgba(80, 80, 80, 0.08)),
@@ -222,7 +232,7 @@ export const HeroSec = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 80vh;
   .container {
     display: flex;
     align-items: center;
@@ -371,7 +381,7 @@ export const BrowseSec = styled.div`
   }
 `;
 export const VisitSec = styled.div`
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   background-color: #f9f9f7;
   .container {
@@ -548,7 +558,7 @@ export const OfferSec = styled.div`
 `;
 export const DeliverySec = styled.div`
   background-color: #f9f9f7;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 
   .container {
@@ -743,7 +753,7 @@ export const TestimonialSec = styled.div`
 `;
 export const BlogSec = styled.div`
   background-color: #f9f9f7;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 4rem 0;
 
@@ -904,7 +914,7 @@ export const BlogSec = styled.div`
   }
 `;
 export const FooterSec = styled.footer`
-  max-width: 1200px;
+  /* max-width: 1200px; */
 
   margin: 0 auto;
   padding: 9rem 0;

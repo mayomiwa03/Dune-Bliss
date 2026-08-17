@@ -18,115 +18,119 @@ const Header = () => {
   return (
     <HeaderSec>
       <div className="Uppernav">
-        <div className="contact">
-          <a href="tel:+2348145829513">
+        <div className="containerrr">
+          <div className="contact">
+            <a href="tel:+2348145829513">
+              <span>
+                <MdOutlinePhone />
+              </span>{" "}
+              (234) 814 582 9513
+            </a>
+            <a href="mailto:oluwamayomiwa03@gmail.com">
+              <span>
+                <MdMailOutline />
+              </span>
+              DuneBistro@gmail.com
+            </a>
+          </div>
+          <div className="socials">
             <span>
-              <MdOutlinePhone />
-            </span>{" "}
-            (234) 814 582 9513
-          </a>
-          <a href="mailto:oluwamayomiwa03@gmail.com">
-            <span>
-              <MdMailOutline />
+              <a href="">
+                <FaTwitter />
+              </a>{" "}
             </span>
-            DuneBistro@gmail.com
-          </a>
-        </div>
-        <div className="socials">
-          <span>
-            <a href="">
-              <FaTwitter />
-            </a>{" "}
-          </span>
-          <span>
-            <a href="">
-              <FaFacebookF />
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <FaInstagram />
-            </a>
-          </span>
-          <span>
-            <a href="">
-              <FaGithub />
-            </a>{" "}
-          </span>
+            <span>
+              <a href="">
+                <FaFacebookF />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <FaInstagram />
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <FaGithub />
+              </a>{" "}
+            </span>
+          </div>
         </div>
       </div>
       <div className="lowerNav">
-        <div className="logo">
-          <img src={logo} alt="" />
-          <h1>Dune Bliss</h1>
-        </div>
-        <div className="nav">
-          <ul ref={navRef}>
-            <li>
-              {" "}
-              <NavLink
-                to="/LandingPage"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                to="/menu"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Menu
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                to="/pages"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Pages
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                to="/contact"
-                className={({ isActive }) => (isActive ? "active" : "")}
-              >
-                Contact
-              </NavLink>{" "}
-            </li>
-            <li>
-              <NavLink to="/book" className="book-nav">
-                Book a Table
-              </NavLink>
-            </li>
+        <div className="containerrr">
+          <div className="logo">
+            <img src={logo} alt="" />
+            <h1>Dune Bliss</h1>
+          </div>
+          <div className="nav">
+            <ul ref={navRef}>
+              <li>
+                {" "}
+                <NavLink
+                  to="/LandingPage"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                {" "}
+                <NavLink
+                  to="/menu"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  Menu
+                </NavLink>
+              </li>
+              <li>
+                {" "}
+                <NavLink
+                  to="/pages"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  Pages
+                </NavLink>
+              </li>
+              <li>
+                {" "}
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  Contact
+                </NavLink>{" "}
+              </li>
+              <li>
+                <NavLink to="/book" className="book-nav">
+                  Book a Table
+                </NavLink>
+              </li>
 
-            <button className="hamburgerClose" onClick={showNavbar}>
-              <span>
-                <MdClose />
-              </span>
-            </button>
-          </ul>
+              <button className="hamburgerClose" onClick={showNavbar}>
+                <span>
+                  <MdClose />
+                </span>
+              </button>
+            </ul>
+          </div>
+          <NavLink className="book" to="/book">
+            Book A Table
+          </NavLink>
+          <button className="hamburgerOpen" onClick={showNavbar}>
+            <span>
+              <CgMenuLeftAlt />
+            </span>
+          </button>
         </div>
-        <NavLink className="book" to="/book">
-          Book A Table
-        </NavLink>
-        <button className="hamburgerOpen" onClick={showNavbar}>
-          <span>
-            <CgMenuLeftAlt />
-          </span>
-        </button>
       </div>
     </HeaderSec>
   );
