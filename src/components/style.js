@@ -486,7 +486,8 @@ export const VisitSec = styled.div`
         }
       }
       .right {
-        width: 320px;
+        width: 100%;
+        padding: 0;
         h1 {
           font-size: 24px;
         }
@@ -543,7 +544,7 @@ export const OfferSec = styled.div`
     }
   }
   @media (min-width: 260px) and (max-width: 500px) {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     .title {
       width: 80%;
       h1 {
@@ -1089,7 +1090,6 @@ export const FooterSec = styled.footer`
   }
 `;
 export const InfoSec = styled.div`
-  max-width: 1200px;
   background-color: #f9f9f7;
 
   margin: 3rem auto 0;
@@ -1135,6 +1135,38 @@ export const InfoSec = styled.div`
     .right {
       img {
         width: 450px;
+      }
+    }
+  }
+  @media (min-width: 260px) and (max-width: 500px) {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+
+      .left {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 9px;
+        }
+        .gridbox {
+          grid-template-columns: 1fr 1fr;
+
+          .gridcard {
+            h1 {
+              font-size: 20px;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .right {
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -1225,6 +1257,7 @@ export const FeelSec = styled.div`
     .flxboxes {
       flex-direction: column;
       padding: 1rem 2rem;
+      align-items: start;
       .flxbox {
         .icon {
           font-size: 20px;
